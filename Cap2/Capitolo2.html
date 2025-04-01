@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" href="../menu.css">
+</head>
+
+<body>
+
+    <div class="flex-container" id="lista">
+        <div class="titles" id="title">Make UI Graphic Again</div>
+        <div class="titles">Un problema di espressività</div>
+        <div class="titles">Cause storiche</div>
+        <div class="titles">Cause tecniche</div>
+        <div class="titles">Un design delle interfacce visivo</div>
+        <div class="titles">50 interfacce visive</div>
+        <div class="titles">Conclusioni</div>
+    </div>
+    <div id="hamburger">
+        <div id="scritta-menu">INDEX</div>
+        <div id="scritta-close" style="display: none;">CLOSE</div>
+    </div>
+    <div id="contenitore-grigio">
+        <div id="contenitore-Overlay">
+            <div id="docContent"></div>
+        </div>
+    </div>
+</body>
+
+
+<script src="../menu.js"></script>
+<script>
+    fetch('02.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('docContent').innerHTML = data)
+        .catch(error => console.error('Errore nel caricamento del documento:', error));
+</script>
+
+</html>

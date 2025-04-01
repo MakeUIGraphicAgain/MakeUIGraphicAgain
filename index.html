@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" href="menu.css">
+</head>
+
+<body>
+
+    <div class="flex-container" id="lista">
+        <div class="titles" id="title">Make UI Graphic Again</div>
+        <a href="Cap1/Capitolo1.html?Capitolo=1"><div class="titles">Un problema di espressività</div></a>
+        <a href="Cap2/Capitolo2.html?Capitolo=2"><div class="titles">Cause storiche</div></a>
+        <a href="Cap3/Capitolo3.html?Capitolo=3"><div class="titles">Cause tecniche</div></a>
+        <div class="titles">Un design delle interfacce visivo</div>
+        <a href="interfacce.html?Capitolo=5"><div class="titles">50 interfacce espressive</div></a>
+        <div class="titles">Conclusioni</div>
+    </div>
+    <div id="hamburger">
+        <div id="scritta-menu">INDEX</div>
+        <div id="scritta-close" style="display: none;">CLOSE</div>
+    </div>
+    <div id="contenitore-grigio">
+        <div id="contenitore-Overlay">
+            <div id="tesi-subtitle">Oltre usabilità ed estetica:<br>interfacce come mezzi comunicativi nell’espressione di
+                un’identità</div>
+            <div id="indication">TOCCA L'INTERFACCIA IN MOVIMENTO<br>PER SCOPRIRE 50 INTERFACCE ESPRESSIVE</div>
+            <img id="dvdLogo" src="risorse/preview/0.png" onclick="gotoArchivio()">
+        </div>
+    </div>
+</body>
+
+
+<script>
+    window.addEventListener("load", function() {
+    const urlParams = new URLSearchParams(window.location.search); // Ottieni i parametri dell'URL attuale
+
+    // Verifica se il parametro "nome" esiste nell'URL, altrimenti aggiungilo
+    if (!urlParams.has("Capitolo")) {
+        urlParams.set("Capitolo", "0"); // Aggiungi il parametro "nome" con valore "Mario"
+    }
+
+    // Se l'URL originale non ha parametri, aggiorna l'URL con i nuovi parametri
+    if (!window.location.search) {
+        const newUrl = `${window.location.origin}${window.location.pathname}?${urlParams.toString()}`;
+        
+        // Modifica l'URL del browser senza ricaricare la pagina
+        window.history.pushState({}, "", newUrl);
+    }
+});
+
+</script>
+
+<script src="menu.js"></script>
+<script src="dvd.js"></script>
+
+</html>

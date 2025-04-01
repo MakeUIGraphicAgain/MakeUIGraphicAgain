@@ -1,0 +1,135 @@
+:root {
+    --nero: black;
+    --bianco: #f5f5f5;
+    --grigioScuro: #161616;
+    --grigioMedio: #1C1C1C;
+    --grigioChiaro: #292929;
+    --giallo: #FFFF0A;
+
+    --mini: 2.8vw;
+    --piccolo: 3.5vw;
+    --medio: 5.6vw;
+    --grande: 8vw;
+}
+
+a {
+    color: var(--bianco);
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'Semplice';
+    src: url('risorse/TWKLausanne-300.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    background-color: var(--nero);
+    color: var(--bianco) !important;
+    overflow-x: hidden !important;
+    overflow: hidden;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Semplice', sans-serif;
+    overflow: hidden;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 50vw;
+    top: -8px;
+    transform: translateX(-50%);
+    width: 64vw;
+    transition: 0.4s;
+    animation-timing-function: ease-in;
+  }
+
+
+.titles {
+    font-size: 3.5vw;
+    margin-bottom: 1vh;
+    padding: 2.2vh;
+    text-align: center;
+    line-height: 1.2;
+    transition: 0.2s;
+    animation-timing-function: ease-in;
+}
+
+#hamburger {
+    position: fixed;
+    top: -8px;
+    right: 0;
+    font-size: 3.5vw;
+    padding: 16px;
+    padding-left: 24px;
+    padding-top: 2.2vh;
+    padding-bottom: 4vh;
+}
+
+#contenitore-grigio {
+    background-color: var(--grigioScuro);
+    position: fixed;
+    top: 5.4vh;
+    height: 95svh;
+    width: 100vw;
+    border-radius: 21px 21px 0px 0px;
+    transition: 0.4s;
+    animation-timing-function: ease-in;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+#contenitore-Overlay {
+    transition: 0.4s;
+    animation-timing-function: ease-in; 
+    overflow-y: visible;
+}
+
+#tesi-subtitle {
+    font-size: 4.2vw;
+    position: absolute;
+    left: 50%;
+    top: 48svh;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    width: 80%;
+}
+
+#indication {
+    font-size: var(--mini);
+    position: absolute;
+    left: 50%;
+    bottom: 2.4vh;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 95%;
+    opacity: 0.2;
+    /*animation: oscillareOpacita 3s infinite ease-in-out;*/
+}
+
+@keyframes oscillareOpacita {
+    0% {
+      opacity: 0.2;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.2;
+    }
+  }
+
+#dvdLogo {
+    position: absolute;
+    width: 21vw; /* Puoi regolare la dimensione dell'immagine */
+    height: auto;
+    transition: all 0.02s linear; /* Per un movimento più fluido */
+    will-change: transform;
+}

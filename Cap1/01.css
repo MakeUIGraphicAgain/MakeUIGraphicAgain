@@ -1,0 +1,99 @@
+body {
+    font-family: 'Semplice', sans-serif !important;
+}
+
+html {
+    overflow-x: hidden !important;
+}
+
+span {
+    color: var(--bianco) !important;
+    /* Cambia il colore dei paragrafi a viola */
+    font-family: 'Semplice', sans-serif !important;
+    font-size: 3.8vw;
+    line-height: 1.4;
+    letter-spacing: 0.1px;
+}
+
+#docContent {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.paragrafo-titolo {
+    padding-top: 24pt;
+    padding-bottom: 24pt;
+    line-height: 1.15;
+    orphans: 2;
+    widows: 2;
+    text-align: center;
+}
+
+/* Titolo */
+.c15 {
+    font-size: 3.8vw !important;
+    line-height: 1.24 !important;
+}
+
+/* Sottotitolo */
+.c10 {
+    font-size: 6.4vw !important;
+    line-height: 1.24 !important;
+    color: var(--giallo) !important;
+    font-weight: 400;
+}
+
+/* Corpo */
+.c2 {
+    font-size: 3.8vw !important;
+    line-height: 1.4 !important;
+    letter-spacing: 0.1px;
+}
+
+/* Links */
+.c14 {
+    font-size: 3.8vw !important;
+    line-height: 1.4 !important;
+    letter-spacing: 0.1px;
+}
+
+/* Citazioni */
+.c0 {
+    font-size: 6.4vw !important;
+    line-height: 1.24 !important;
+}
+
+/* Numerini */
+sup.c0 {
+    font-size: 3.2vw !important;
+    vertical-align: top;
+    color: var(--giallo) !important;
+}
+
+sup a {
+    color: var(--giallo) !important;
+    font-style: normal !important;
+}
+
+
+.c1 {
+    font-size: 2.4vw !important;
+    line-height: 1.24 !important;
+    padding-bottom: 12pt;
+}
+
+.c5 {
+    font-size: 2.4vw !important;
+    line-height: 1.24 !important;
+    max-width: 100%;
+    overflow-wrap: break-word; /* Spezza le parole troppo lunghe */
+    word-break: break-word; /* Per compatibilità con alcuni browser */
+    white-space: normal;
+}
+
+img, span {
+    width: 100% !important;
+    height: auto !important;
+}
+

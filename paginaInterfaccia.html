@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="interfaccia.css">
+</head>
+
+<body>
+
+    <div class="flex-container" id="lista">
+        <a href="index.html"><div class="titles" id="title">Make UI Graphic Again</div></a>
+        <div class="titles">Un problema di espressività</div>
+        <div class="titles">Cause storiche</div>
+        <div class="titles">Cause tecniche</div>
+        <div class="titles">Un design delle interfacce visivo</div>
+        <a href="interfacce.html?Capitolo=5"><div class="titles" id="title">50 interfacce espressive</div></a>
+        <div class="titles">Conclusioni</div>
+    </div>
+    <div id="contenitore-grigio">
+        <div id="contenitore-Overlay">
+            <div id="nome"></div>
+            <div class="about"><span id="tipo"></span> (<span id="status"></span>)<br><span id="autore"></span>, <span id="anno"></span></div>
+            <div id="flex-image-container">
+            </div>
+            <div id="domanda">Che voto daresti all'espressività* di <span id="nomeDue"></span>?</div>
+            <div id="inputter">
+                <div id="riempimento"></div>
+                <div id="maiuscoletti">
+                    <div id="doppio-tocco">TOCCA DUE VOLTE<br>PER AGGIUNGERE UN VOTO</div>
+                    <div id="incremento">+1</div>
+                    <div id="voto"></div>
+                    <div id="long-press">TIENI PREMUTO<br>PER CONFERMARE</div>
+                </div>
+            </div>
+            <div id="asterisco">*Per espressività intendiamo la capacità dell’interfaccia di rappresentare un’identità
+                digitale unica.</div>
+            <div id="come">Come è stata ottenuta l'unicità espressiva?</div>
+
+            <div class="macro" id="colore" onclick="showChildren(this)">
+                <span>COLORE</span>
+                <div class="caratteristica" id="2">C1. Palette colori integrata nella UI</div>
+                <div class="caratteristica" id="3">C2. Sfondo brandizzato</div>
+                <div class="caratteristica" id="4">C3. Contrasti e abbinamenti di colore unici</div>
+                <img class="icon" src="risorse/Drop-down.svg">
+            </div>
+
+            <div class="macro" id="tipografia" onclick="showChildren(this)">
+                <span>TIPOGRAFIA</span>
+                <div class="caratteristica" id="5">T1. Tipografia espressiva</div>
+                <div class="caratteristica" id="6">T2. Tipografia con sofisticazioni grafiche</div>
+                <img class="icon" src="risorse/Drop-down.svg">
+            </div>
+
+            <div class="macro" id="layout" onclick="showChildren(this)">
+                <span>LAYOUT</span>
+                <div class="caratteristica" id="7">L1. Uso creativo dello spazio</div>
+                <div class="caratteristica" id="8">L2. Layout de-strutturato</div>
+                <img class="icon" src="risorse/Drop-down.svg">
+            </div>
+
+            <div class="macro" id="T-Grafici" onclick="showChildren(this)">
+                <span>TRATTAMENTI GRAFICI</span>
+                <div class="caratteristica" id="9">G1. Trattamenti visivi cromatici degli elementi</div>
+                <div class="caratteristica" id="10">G2. Utilizzo di un linguaggio visivo negli elementi</div>
+                <div class="caratteristica" id="11">G3. Linguaggio visivo integrato strutturalmente</div>
+                <div class="caratteristica" id="12">G4. Approccio artistico alla creazione degli elementi</div>
+                <img class="icon" src="risorse/Drop-down.svg">
+            </div>
+
+            <div class="macro" id="Contenuto" onclick="showChildren(this)">
+                <span>CONTENUTO</span>
+                <div class="caratteristica" id="13">I1. Icone brandizzate</div>
+                <div class="caratteristica" id="14">I2. Illustrazioni uniche</div>
+                <div class="caratteristica" id="15">V1. Custom Data-Viz</div>
+                <img class="icon" src="risorse/Drop-down.svg">
+            </div>
+
+            <div class="macro" id="Interazione" onclick="showChildren(this)">
+                <span>INTERAZIONE</span>
+                <div class="caratteristica" id="16">R1. Strutture custom degli elementi</div>
+                <div class="caratteristica" id="17">R2. Elementi interattivi custom, brandizzati</div>
+                <div class="caratteristica" id="18">R3. Implementazione di interazioni alternative</div>
+                <img class="icon" src="risorse/Drop-down.svg">
+            </div>
+
+            <div class="macro" id="Navigazione" onclick="showChildren(this)">
+                <span>NAVIGAZIONE</span>
+                <div class="caratteristica" id="19">N1. Navigazioni assurde</div>
+                <img class="icon" src="risorse/Drop-down.svg">
+            </div>
+
+            <div class="macro" id="Animazioni" onclick="showChildren(this)">
+                <span>ANIMAZIONI</span>
+                <div class="caratteristica" id="20">A1. Animazioni brandizzate</div>
+                <div class="caratteristica" id="21">A2. Micro-interazioni animate</div>
+                <img class="icon" src="risorse/Drop-down.svg">
+            </div>
+        </div>
+    </div>
+    <div id="hamburger">
+        <div id="scritta-menu">MENU</div>
+        <div id="scritta-close" style="display: none;">CLOSE</div>
+    </div>
+</body>
+
+
+<script src="menu.js"></script>
+<script src="singolainterfaccia.js"></script>
+
+
+</html>
