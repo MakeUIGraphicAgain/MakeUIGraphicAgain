@@ -27,7 +27,7 @@ window.addEventListener("resize", () => {
 document.getElementById("hamburger").addEventListener("click", function () {
 
     if (stato == 0) {
-        box.style.top = "52vh";
+        box.style.top = "38vh";
         titles[capitolo].style.opacity = "0.2";
         lista.style.top = "-8px";
         box2.style.opacity = "0.3";

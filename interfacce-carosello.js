@@ -1,17 +1,17 @@
 const container = document.getElementById("flex-image-container");
 
-for (let i = 0; i <= 8; i++) {
+for (let i = 0; i < 27; i++) {
     const imgElement = document.createElement("img");
     imgElement.src = `risorse/interfacce/${i}/1.png`;
     imgElement.classList.add("interfacce-carosello");
     if (i == 0) {
         imgElement.style.marginLeft = "22vw";
-    } else if (i == 8) {
+    } else if (i ==26) {
         imgElement.style.marginRight = "22vw";
     }
 
     imgElement.onclick = function () {
-        window.location.href = `paginaInterfaccia.html?id=${i}&Capitolo=5`; 
+        window.location.href = `paginaInterfaccia.html?id=${i}&Capitolo=4`; 
     };
 
     // Aggiungi l'immagine al contenitore
@@ -28,7 +28,7 @@ function fetchData() {
             nomi = []; // Svuota l'array prima di riempirlo
             
             // Supponiamo che i dati siano in data.data e contengano almeno 9 elementi
-            for (let i = 0; i < 9; i++) {
+            for (let i = 0; i < 27; i++) {
                     nomi.push(data.data[0][i]); // Sostituisci "Nome" con la colonna corretta
             }
 

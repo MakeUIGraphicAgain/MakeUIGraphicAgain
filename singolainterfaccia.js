@@ -238,11 +238,13 @@ function leggiRow() {
 
 function sendVoto() {
     let votoConfermato = document.getElementById("voto").innerText;
+    let quale = urlParams.get('id');
+    console.log(albumId);
 
     // Crea il corpo della richiesta con i dati da inviare
     const requestBody = {
         data: {
-            "0": votoConfermato  // Assicurati che il nome della colonna sia esattamente quello nel foglio
+            [quale]: votoConfermato  // Assicurati che il nome della colonna sia esattamente quello nel foglio
         },
         query: `select * from 1 where id = ${rowNewValue}` // Usa la query per specificare la riga da aggiornare
     };
