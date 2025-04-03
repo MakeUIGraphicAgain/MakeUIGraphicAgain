@@ -7,7 +7,7 @@ for (let i = 0; i < 27; i++) {
     if (i == 0) {
         imgElement.style.marginLeft = "26vw";
     } else if (i ==26) {
-        imgElement.style.paddingRight = "22vw";
+        imgElement.style.paddingRight = "26vw";
     }
 
     imgElement.onclick = function () {
