@@ -47,5 +47,5 @@ function updateImg() {
 }
 
 function gotoArchivio() {
-    window.location.href = `interfacce.html?Capitolo=5`; 
+    window.location.href = `interfacce.html?Capitolo=4`; 
 }
